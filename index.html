@@ -1421,9 +1421,17 @@
         });
     </script>
 <!-- Accessibility Widget -->
-<script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js" position="bottom-left"></script>
+<script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<script>
+window.onload = function() {
+    window.micAccessTool = new MicAccessTool({
+        buttonPosition: 'left'
+    });
+};
+</script>>
 </body>
 </html>
+
 
 
 
