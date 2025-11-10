@@ -1421,16 +1421,23 @@
         });
     </script>
 <!-- Accessibility Widget -->
-<script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/yortem/yAccessibility@latest/yaccessibility.js"></script>
 <script>
-window.onload = function() {
-    window.micAccessTool = new MicAccessTool({
-        buttonPosition: 'left'
+    yAccessibility({
+        language: 'he',
+        verticalPosition: 'bottom'
     });
-};
-</script>>
+</script>
+
+<!-- Custom Styling for Accessibility Widget -->
+<style>
+    /* כפתור הנגישות הראשי */
+    .accessibility-button {
+        background: linear-gradient(135deg, #DFB249 0%, rgba(223, 178, 73, 0.8) 100%) !important;
+        border: 2px solid #DFB249 !important;
 </body>
 </html>
+
 
 
 
