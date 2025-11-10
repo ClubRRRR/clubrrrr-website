@@ -1429,14 +1429,58 @@
     });
 </script>
 
-<!-- Custom Styling for Accessibility Widget -->
 <style>
-    /* כפתור הנגישות הראשי */
+    /* כפתור הנגישות הראשי - גרסה עדינה */
     .accessibility-button {
-        background: linear-gradient(135deg, #DFB249 0%, rgba(223, 178, 73, 0.8) 100%) !important;
+        background: rgba(10, 10, 10, 0.9) !important;
         border: 2px solid #DFB249 !important;
+        box-shadow: 0 4px 15px rgba(223, 178, 73, 0.2) !important;
+    }
+    
+    .accessibility-button svg,
+    .accessibility-button i {
+        color: #DFB249 !important;
+    }
+    
+    .accessibility-button:hover {
+        background: rgba(223, 178, 73, 0.1) !important;
+        border-color: #DFB249 !important;
+        box-shadow: 0 6px 20px rgba(223, 178, 73, 0.4) !important;
+    }
+    
+    /* תפריט הנגישות */
+    .accessibility-menu {
+        background: rgba(10, 10, 10, 0.98) !important;
+        border: 2px solid rgba(223, 178, 73, 0.3) !important;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8) !important;
+        backdrop-filter: blur(15px) !important;
+    }
+    
+    .accessibility-menu h2,
+    .accessibility-menu h3 {
+        color: #DFB249 !important;
+    }
+    
+    .accessibility-menu button {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(223, 178, 73, 0.2) !important;
+        color: #FFFFFF !important;
+    }
+    
+    .accessibility-menu button:hover {
+        background: rgba(223, 178, 73, 0.15) !important;
+        border-color: rgba(223, 178, 73, 0.5) !important;
+    }
+    
+    .accessibility-menu button.active {
+        background: rgba(223, 178, 73, 0.2) !important;
+        border-color: #DFB249 !important;
+        box-shadow: 0 0 10px rgba(223, 178, 73, 0.3) !important;
+    }
+</style>
 </body>
 </html>
+
 
 
 
